@@ -37,7 +37,7 @@ local tiers = {
     "FORGOTTEN"
 }
 
-local ENDPOINT = "https://common-mixture-pay-flashing.trycloudflare.com/fish-caught"
+local ENDPOINT = "https://creature-plans-dual-cited.trycloudflare.com/fish-caught"
 
 local net = ReplicatedStorage
     .Packages._Index["sleitnick_net@0.2.0"]
