@@ -24,7 +24,7 @@ corner.Parent = frame
 local title = Instance.new("TextLabel")
 title.Size = UDim2.new(1, 0, 0, 45)
 title.BackgroundTransparency = 1
-title.Text = "Fish API Gate"
+title.Text = "Broadcast Controller"
 title.TextColor3 = Color3.new(1, 1, 1)
 title.TextSize = 18
 title.Font = Enum.Font.GothamBold
@@ -86,12 +86,6 @@ for i, tier in ipairs(tiers) do
         gate[tier] = not gate[tier]
 
         update()
-
-        print(
-            "[FishGate]",
-            tier,
-            gate[tier] and "ON" or "OFF"
-        )
 
     end)
 
