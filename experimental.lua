@@ -469,6 +469,10 @@ testButton.MouseButton1Click:Connect(function()
         weight = "1.1M",
         rarity = "25M"
     }
+
+    if gate[testData.fishTier] ~= true then
+        return
+    end
     pcall(function()
         request({
             Url = epURL,
