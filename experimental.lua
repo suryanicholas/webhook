@@ -405,7 +405,7 @@ inputCorner.Parent = displayNameInput
 
 local testButton = Instance.new("TextButton")
 testButton.Size = UDim2.new(1, 0, 0, 30)
-testButton.Position = UDim2.fromOffset(0, 72)
+testButton.Position = UDim2.fromOffset(0, 108)
 testButton.Text = "Test Webhook"
 testButton.TextColor3 = Color3.fromRGB(148, 163, 184)
 testButton.TextSize = 13
