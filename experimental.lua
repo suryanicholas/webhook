@@ -8,6 +8,10 @@ local net = ReplicatedStorage
 
 local hooked = {}
 local epURL = "https://creature-plans-dual-cited.trycloudflare.com/fish-caught"
+local gate = {
+    SECRET = true,
+    FORGOTTEN = true
+}
 
 local tierByColor = {
     ["255,185,43"] = "Legendary",
@@ -149,11 +153,6 @@ end
 
 local player = Players.LocalPlayer
 local playerGui = player:WaitForChild("PlayerGui")
-
-local gate = {
-    SECRET = true,
-    FORGOTTEN = true
-}
 
 local collapsed = false
 
