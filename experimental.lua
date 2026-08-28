@@ -365,6 +365,44 @@ createToggle(
     32
 )
 
+local displayNameInput = Instance.new("TextBox")
+
+displayNameInput.Name = "DisplayNameInput"
+displayNameInput.Size = UDim2.new(1, 0, 0, 30)
+displayNameInput.Position = UDim2.fromOffset(0, 72)
+
+displayNameInput.BackgroundColor3 =
+    Color3.fromRGB(71, 85, 105)
+
+displayNameInput.BorderSizePixel = 0
+
+displayNameInput.Text = ""
+displayNameInput.PlaceholderText = "Display Name..."
+displayNameInput.PlaceholderColor3 =
+    Color3.fromRGB(148, 163, 184)
+
+displayNameInput.TextColor3 =
+    Color3.fromRGB(226, 232, 240)
+
+displayNameInput.TextSize = 13
+displayNameInput.Font = Enum.Font.Gotham
+
+displayNameInput.ClearTextOnFocus = false
+
+displayNameInput.TextXAlignment =
+    Enum.TextXAlignment.Left
+
+displayNameInput.Parent = content
+
+local inputPadding = Instance.new("UIPadding")
+inputPadding.PaddingLeft = UDim.new(0, 10)
+inputPadding.PaddingRight = UDim.new(0, 10)
+inputPadding.Parent = displayNameInput
+
+local inputCorner = Instance.new("UICorner")
+inputCorner.CornerRadius = UDim.new(0, 5)
+inputCorner.Parent = displayNameInput
+
 local testButton = Instance.new("TextButton")
 testButton.Size = UDim2.new(1, 0, 0, 30)
 testButton.Position = UDim2.fromOffset(0, 72)
@@ -419,8 +457,12 @@ closeButton.MouseButton1Click:Connect(function()
 end)
 
 testButton.MouseButton1Click:Connect(function()
+    local displayName = displayNameInput.Text
+    if displayName == "" then
+        displayName = "TestUser"
+    end
     local testData = {
-        displayName = "user",
+        displayName = displayName,
         fishTier = "FORGOTTEN",
         variant = "BLOODMOON",
         fishCaught = "Thunderzilla",
