@@ -164,7 +164,7 @@ gui.Parent = playerGui
 
 local panel = Instance.new("Frame")
 panel.Name = "Panel"
-panel.Size = UDim2.fromOffset(260, 185)
+panel.Size = UDim2.fromOffset(260, 221)
 panel.Position = UDim2.fromOffset(16, 64)
 panel.BackgroundColor3 = Color3.fromRGB(51, 65, 85)
 panel.BorderSizePixel = 0
