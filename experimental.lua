@@ -7,7 +7,7 @@ local net = ReplicatedStorage
     .net
 
 local hooked = {}
-local epURL = "https://creature-plans-dual-cited.trycloudflare.com/fish-caught"
+local epURL = "https://revision-medicine-often-finger.trycloudflare.com/fish-caught"
 local gate = {
     SECRET = true,
     FORGOTTEN = true
